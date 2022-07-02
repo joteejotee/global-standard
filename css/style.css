@@ -1,0 +1,364 @@
+@charset "UTF-8";
+/* ===============================================
+# mixins
+================================================ */
+/* ===============================================
+# colors
+================================================ */
+/* ===============================================
+# font
+================================================ */
+/* ===============================================
+# common - 全体に共通するスタイル
+================================================ */
+@media screen and (max-width: 767px) {
+  .is-pc {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .is-sp {
+    display: none;
+  }
+}
+
+body {
+  font-size: 14px;
+  color: #1A1A1A;
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7142;
+}
+
+img {
+  width: 100%;
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 7.0312vw;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.util-title {
+  color: #023E78;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 100px;
+  line-height: 9.4531vw;
+}
+
+.util-title-jp {
+  font-size: 24px;
+  line-height: 2.7343vw;
+  color: #023E78;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: bold;
+}
+
+.view-more {
+  font-family: "Fira Sans", sans-serif;
+  line-height: 2.9687vw;
+  font-size: 32px;
+  margin: auto 0 auto auto;
+  width: 288px;
+}
+
+/* ===============================================
+  @extend
+=============================================== */
+/* ===============================================
+  header
+=============================================== */
+.header {
+  width: 100%;
+  height: 100px;
+}
+
+.header-inner {
+  margin: 0 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-logo {
+  width: 282px;
+  height: 53px;
+}
+
+.header-nav {
+  margin-left: auto;
+}
+
+.header-nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-nav-item {
+  position: relative;
+}
+
+.header-nav-item + .header-nav-item {
+  margin-left: 46px;
+}
+
+.header-nav-item + .header-nav-item::before {
+  position: absolute;
+  content: '／';
+  display: block;
+  left: -30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.header-nav-item-link {
+  display: block;
+  color: #1A1A1A;
+  height: 100px;
+  line-height: 100px;
+}
+
+.header-nav-download {
+  border: solid 1px #023E78;
+  width: 176px;
+  margin-left: 32px;
+}
+
+.header-nav-download-link {
+  display: block;
+  color: #1A1A1A;
+  height: 66px;
+  line-height: 66px;
+  text-align: center;
+}
+
+.header-nav-contact {
+  width: 176px;
+  margin-left: 10px;
+}
+
+.header-nav-contact-link {
+  display: block;
+  color: #FFFFFF;
+  height: 68px;
+  line-height: 68px;
+  text-align: center;
+  background: #023E78;
+}
+
+/* ===============================================
+  top
+=============================================== */
+.top {
+  position: relative;
+}
+
+.top-pic {
+  padding-top: 58%;
+  background: url(/img/01-top/img-mv01_pc@2x.jpg) top right/92.9% no-repeat;
+}
+
+.top-message {
+  position: absolute;
+  left: 50px;
+  top: 85.7%;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.top-message-title {
+  background: #FFFFFF;
+  color: #023E78;
+  font-size: 4.6875vw;
+  font-family: "Fira Sans", sans-serif;
+  line-height: 1.2;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.top-message-title + .top-message-title {
+  margin-top: 16px;
+}
+
+.top-message-text {
+  background: #023E78;
+  color: #FFFFFF;
+  font-size: 1.5625vw;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: bold;
+  line-height: 1.45;
+  margin-top: 16px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+/* ===============================================
+  about
+=============================================== */
+.about {
+  background: #EDF3F8;
+}
+
+.util-title-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-message-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 21px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-message-text {
+  width: 29.6875vw;
+  font-size: 14px;
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7142;
+}
+
+.about-view {
+  color: #FFFFFF;
+}
+
+.about-message-img {
+  width: 53.125vw;
+  margin-left: 3.125vw;
+}
+
+/* ===============================================
+  service
+=============================================== */
+.service-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1100px;
+  height: 830px;
+}
+
+.service-item {
+  max-height: 638px;
+  max-width: 320px;
+  width: 29.09%;
+  position: relative;
+}
+
+.service-item-1 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.service-item-2 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.service-item-3 {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.service-item-img-1 {
+  height: 482px;
+  background: url(/img/01-top/img-service01@2x.jpg) bottom right/100% no-repeat;
+}
+
+.service-item-img-2 {
+  height: 482px;
+  background: url(/img/01-top/img-service02@2x.jpg) bottom right/100% no-repeat;
+}
+
+.service-item-img-3 {
+  height: 482px;
+  background: url(/img/01-top/img-service03@2x.jpg) bottom right/100% no-repeat;
+}
+
+.service-item-title-1 {
+  position: absolute;
+  color: #023E78;
+  background: #FFFFFF;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 28px;
+  line-height: 40px;
+  top: 63%;
+  left: -10%;
+}
+
+.service-item-title-2 {
+  position: absolute;
+  top: 55%;
+  left: -10%;
+}
+
+.service-item-title-3 {
+  position: absolute;
+  top: 55%;
+  left: -10%;
+}
+
+.service-item-title {
+  display: inline-block;
+  color: #023E78;
+  background: #FFFFFF;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.service-item-title-bottom {
+  color: #023E78;
+  background: #FFFFFF;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 28px;
+  line-height: 40px;
+  margin-top: 9px;
+}
+
+.service-item-text {
+  color: #1A1A1A;
+  margin-top: 16px;
+  font-size: 14px;
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 24px;
+}
+
+/* ===============================================
+  case
+=============================================== */
+/* ===============================================
+  news
+=============================================== */
+.news-item-text {
+  color: #1A1A1A;
+}
+
+/* ===============================================
+  footer
+=============================================== */
+.footer-down {
+  background: #1A1A1A;
+}
+/*# sourceMappingURL=style.css.map */
