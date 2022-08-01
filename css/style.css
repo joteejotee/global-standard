@@ -11,13 +11,28 @@
 /* ===============================================
 # common - 全体に共通するスタイル
 ================================================ */
-@media screen and (max-width: 767px) {
-  .is-pc {
+@media screen and (max-width: 576px) {
+  .none-sm {
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
-  .is-sp {
+@media screen and (max-width: 768px) {
+  .none-md {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .none-lg {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .none-xl {
+    display: none;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .none-xxl {
     display: none;
   }
 }
@@ -38,28 +53,69 @@ img {
   padding: 0 7.0312vw;
   box-sizing: content-box;
 }
+@media screen and (max-width: 1000px) {
+  .inner {
+    padding: 0 10.6667vw;
+  }
+}
 
 .util-title {
   color: #023E78;
   font-family: "Fira Sans", sans-serif;
   font-size: 100px;
-  line-height: 9.4531vw;
+  line-height: 1.21em;
+}
+@media screen and (max-width: 768px) {
+  .util-title {
+    font-size: 52px;
+  }
 }
 
 .util-title-jp {
   font-size: 24px;
-  line-height: 2.7343vw;
+  line-height: 1.458em;
   color: #023E78;
   font-family: "Fira Sans", sans-serif;
   font-weight: bold;
 }
+@media screen and (max-width: 768px) {
+  .util-title-jp {
+    font-size: 16px;
+  }
+}
 
-.view-more {
+@media screen and (max-width: 1000px) {
+  .view-more {
+    display: none;
+  }
+}
+
+.view-more-square {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.view-more-square-link {
+  display: inline-block;
   font-family: "Fira Sans", sans-serif;
-  line-height: 2.9687vw;
-  font-size: 32px;
-  margin: auto 0 auto auto;
-  width: 288px;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFF400;
+  border: solid 3px #FFF400;
+  padding: 35px 100px;
+  position: relative;
+}
+.view-more-square-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  transform: translateY(-50%);
+  width: 21px;
+  height: 14px;
+  background: url(/img/01-top/icon-arrow-right01.svg) center center/cover no-repeat;
 }
 
 /* ===============================================
@@ -97,13 +153,13 @@ img {
   position: relative;
 }
 .header-nav-item + .header-nav-item {
-  margin-left: 46px;
+  margin-left: 3.5937vw;
 }
 .header-nav-item + .header-nav-item::before {
   position: absolute;
   content: "／";
-  display: block;
-  left: -30px;
+  display: inline-block;
+  left: -2.3437vw;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -116,9 +172,15 @@ img {
 }
 
 .header-nav-download {
+  display: inline-block;
   border: solid 1px #023E78;
   width: 176px;
   margin-left: 32px;
+}
+@media screen and (max-width: 1200px) {
+  .header-nav-download {
+    display: none;
+  }
 }
 
 .header-nav-download-link {
@@ -130,8 +192,14 @@ img {
 }
 
 .header-nav-contact {
+  display: inline-block;
   width: 176px;
   margin-left: 10px;
+}
+@media screen and (max-width: 1000px) {
+  .header-nav-contact {
+    display: none;
+  }
 }
 
 .header-nav-contact-link {
@@ -176,11 +244,19 @@ img {
   margin-top: 16px;
 }
 
+.sm-change {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .sm-change {
+    display: block;
+  }
+}
+
 .top-message-text {
   background: #023E78;
   color: #FFFFFF;
   font-size: 1.5625vw;
-  font-family: "Noto Sans JP", sans-serif;
   font-weight: bold;
   line-height: 1.45;
   margin-top: 16px;
@@ -193,10 +269,17 @@ img {
   about
 =============================================== */
 .about {
-  position: relative;
   background: url(/img/01-top/bg-company@2x.jpg) top right/contain no-repeat;
   max-height: 800px;
   height: 62.5vw;
+  position: relative;
+}
+@media screen and (max-width: 1000px) {
+  .about {
+    background: url(/img/01-top/bg-case@2x.jpg) bottom right/contain no-repeat;
+    max-height: 1300px;
+    height: 256.266vw;
+  }
 }
 .about::before {
   content: "";
@@ -224,12 +307,21 @@ img {
   margin-top: 21px;
   align-items: center;
 }
+@media screen and (max-width: 1000px) {
+  .about-message-flex {
+    display: block;
+  }
+}
 
 .about-message-text {
   width: 29.6875vw;
   font-size: 14px;
-  font-family: "Noto Sans JP", sans-serif;
   line-height: 1.7142;
+}
+@media screen and (max-width: 1000px) {
+  .about-message-text {
+    width: 100%;
+  }
 }
 
 .about-view {
@@ -306,7 +398,6 @@ img {
   position: absolute;
   color: #023E78;
   background: #FFFFFF;
-  font-family: "Noto Sans JP", sans-serif;
   font-size: 2.1875vw;
   line-height: 3.125vw;
   top: 80%;
@@ -329,7 +420,6 @@ img {
   display: inline-block;
   color: #023E78;
   background: #FFFFFF;
-  font-family: "Noto Sans JP", sans-serif;
   font-size: 2.1875vw;
   line-height: 3.125vw;
 }
@@ -337,7 +427,6 @@ img {
 .service-item-title-bottom {
   color: #023E78;
   background: #FFFFFF;
-  font-family: "Noto Sans JP", sans-serif;
   font-size: 2.1875vw;
   line-height: 3.125vw;
   margin-top: 9px;
@@ -347,7 +436,6 @@ img {
   color: #1A1A1A;
   margin-top: 16px;
   font-size: 14px;
-  font-family: "Noto Sans JP", sans-serif;
   line-height: 24px;
 }
 
@@ -396,6 +484,19 @@ img {
 =============================================== */
 .news {
   margin-top: 166px;
+  position: relative;
+}
+.news::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 62%;
+  left: 0;
+  width: 100%;
+  height: 57%;
+  background: #EDF3F8;
+  transform: skewY(10deg);
+  z-index: -1;
 }
 
 .news-list {
@@ -406,6 +507,13 @@ img {
   padding: 40px;
   margin: 80px auto 0;
   box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1607843137);
+  background: #fff;
+}
+@media screen and (max-width: 1000px) {
+  .news-list {
+    width: 100%;
+    height: 450px;
+  }
 }
 
 .news-item {
@@ -442,6 +550,70 @@ img {
 /* ===============================================
   footer
 =============================================== */
+.footer {
+  display: grid;
+  grid-template: "download contact" 340px "footer footer" 392px/1fr 1fr;
+  margin-top: 160px;
+}
+@media screen and (max-width: 576px) {
+  .footer {
+    grid-template: "download" 340px "contact" 340px "footer" 392px/1fr;
+  }
+}
+
+.download {
+  background: url(/img/01-top/img-download@2x.jpg) center center/cover no-repeat;
+  grid-area: download;
+}
+
+.other-inner {
+  width: 315px;
+  text-align: center;
+  margin: 56px auto 50px;
+}
+
+.other-title {
+  font-size: 60px;
+  line-height: 72px;
+  color: #fff;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.other-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.contact {
+  background: url(/img/01-top/img-contact@2x.jpg) center center/cover no-repeat;
+  grid-area: contact;
+}
+
 .footer-down {
   background: #1A1A1A;
+  grid-area: footer;
+  color: #FFFFFF;
+}
+
+.footer-logo {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 52px;
+  line-height: 68px;
+  text-align: center;
+  margin-top: 114px;
+}
+
+.footer-info {
+  width: 235px;
+  height: 68px;
+  margin: 23px auto 0;
+  font-style: normal;
+}
+
+.footer-copytight {
+  margin: 80px auto 0;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
