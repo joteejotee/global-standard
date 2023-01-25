@@ -7,7 +7,7 @@
       <div class="top-message-title">YOU CAN<span class="none-sm"> CHANGE</span></div>
       <div class="top-message-title sm-change">CHANGE</div>
       <div class="top-message-title">THE WORLD</div>
-      <div class="top-message-text">界で活躍できるグローバルな人材を育てる</div>
+      <div class="top-message-text">世界で活躍できるグローバルな人材を育てる</div>
     </div>
   </div>
   <!-- /.top -->
