@@ -78,14 +78,6 @@ Template Name: archive
                     <p>サムネイルがないです</p>
                   <?php endif; ?>
 
-
-
-
-
-                  <!-- <img src="/img/04-news/icatch-news.jpg" alt="" class="page-news-right-article-img"> -->
-
-
-
                   <div class="page-news-right-article-texts">
                     <div class="page-news-right-article-categories">
                       <div class="page-news-right-article-cat">カテゴリ</div>
@@ -99,68 +91,7 @@ Template Name: archive
           else : ?>
             <p>記事がありません。</p>
           <?php endif; ?>
-
-
-          <!-- <article class="page-news-right-article">
-            <a href="#" class="page-news-right-article-link">
-              <img src="/img/04-news/icatch-news.jpg" alt="" class="page-news-right-article-img">
-              <div class="page-news-right-article-texts">
-                <div class="page-news-right-article-categories">
-                  <div class="page-news-right-article-cat">カテゴリ</div>
-                  <div class="page-news-right-article-date">2021.01.01</div>
-                </div>
-                <div class="page-news-right-article-text">常にハイパフォーマンスを目指すグローバルビジネスの現場を肌で感じ…</div>
-              </div>
-            </a>
-          </article>
-          <article class="page-news-right-article">
-            <a href="#" class="page-news-right-article-link">
-              <img src="/img/04-news/icatch-news.jpg" alt="" class="page-news-right-article-img">
-              <div class="page-news-right-article-texts">
-                <div class="page-news-right-article-categories">
-                  <div class="page-news-right-article-cat">カテゴリ</div>
-                  <div class="page-news-right-article-date">2021.01.01</div>
-                </div>
-                <div class="page-news-right-article-text">常にハイパフォーマンスを目指すグローバルビジネスの現場を肌で感じ…</div>
-              </div>
-            </a>
-          </article>
-          <article class="page-news-right-article">
-            <a href="#" class="page-news-right-article-link">
-              <img src="/img/04-news/icatch-news.jpg" alt="" class="page-news-right-article-img">
-              <div class="page-news-right-article-texts">
-                <div class="page-news-right-article-categories">
-                  <div class="page-news-right-article-cat">カテゴリ</div>
-                  <div class="page-news-right-article-date">2021.01.01</div>
-                </div>
-                <div class="page-news-right-article-text">常にハイパフォーマンスを目指すグローバルビジネスの現場を肌で感じ…</div>
-              </div>
-            </a>
-          </article>
-          <article class="page-news-right-article">
-            <a href="#" class="page-news-right-article-link">
-              <img src="/img/04-news/icatch-news.jpg" alt="" class="page-news-right-article-img">
-              <div class="page-news-right-article-texts">
-                <div class="page-news-right-article-categories">
-                  <div class="page-news-right-article-cat">カテゴリ</div>
-                  <div class="page-news-right-article-date">2021.01.01</div>
-                </div>
-                <div class="page-news-right-article-text">常にハイパフォーマンスを目指すグローバルビジネスの現場を肌で感じ…</div>
-              </div>
-            </a>
-          </article>
-          <article class="page-news-right-article">
-            <a href="#" class="page-news-right-article-link">
-              <img src="/img/04-news/icatch-news.jpg" alt="" class="page-news-right-article-img">
-              <div class="page-news-right-article-texts">
-                <div class="page-news-right-article-categories">
-                  <div class="page-news-right-article-cat">カテゴリ</div>
-                  <div class="page-news-right-article-date">2021.01.01</div>
-                </div>
-                <div class="page-news-right-article-text">常にハイパフォーマンスを目指すグローバルビジネスの現場を肌で感じ…</div>
-              </div>
-            </a>
-          </article> -->
+          
         </div>
         <!-- /.page-news-right-news -->
         <div class="page-news-right-cat">
