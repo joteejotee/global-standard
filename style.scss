@@ -1139,9 +1139,10 @@ img {
 .service-list {
   max-width: 1100px;
   height: 830px;
+
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 70px;
+  gap: min(5.468%,70px);
   margin-top: 90px;
 
   @include mq(md) {
@@ -1160,12 +1161,15 @@ img {
   }
 
   @include mq(sm) {
-    margin-left: auto;
-    margin-right: 0;
+    margin: 0 auto;
+    // margin-left: auto;
+    // margin-right: 0;
   }
 }
 
-.service-item-1 {}
+.service-item-1 {
+
+}
 
 .service-item-2 {
   margin-top: 60px;
@@ -1184,8 +1188,8 @@ img {
 }
 
 .service-item-img-1 {
-  height: 33.3593vw;
-  background: url(img/01-top/img-service01@2x.jpg) right bottom / 100% no-repeat;
+  height: min(33.3593vw,427px);
+  background: url(img/01-top/img-service01@2x.jpg) right top / 100% no-repeat;
   position: relative;
 
   @include mq(sm) {
@@ -1204,13 +1208,13 @@ img {
     height: 123px;
     background: url(img/01-top/number01.png) right top / 100% no-repeat;
     right: 1px;
-    top: -55px;
+    top: -65px;
   }
 }
 
 .service-item-img-2 {
-  height: 33.3593vw;
-  background: url(img/01-top/img-service02@2x.jpg) right bottom / 100% no-repeat;
+  height: min(33.3593vw,427px);
+  background: url(img/01-top/img-service02@2x.jpg) right top / 100% no-repeat;
   position: relative;
 
   @include mq(sm) {
@@ -1229,13 +1233,13 @@ img {
     height: 123px;
     background: url(img/01-top/number02.png) right top / 100% no-repeat;
     right: 1px;
-    top: -53px;
+    top: -63px;
   }
 }
 
 .service-item-img-3 {
-  height: 33.3593vw;
-  background: url(img/01-top/img-service03@2x.jpg) right bottom / 100% no-repeat;
+  height: min(33.3593vw,427px);
+  background: url(img/01-top/img-service03@2x.jpg) right top / 100% no-repeat;
   position: relative;
 
   @include mq(sm) {
@@ -1254,7 +1258,7 @@ img {
     height: 123px;
     background: url(img/01-top/number03.png) right top / 100% no-repeat;
     right: 1px;
-    top: -53px;
+    top: -63px;
   }
 }
 
@@ -1262,15 +1266,20 @@ img {
   position: absolute;
   color: $primary-color;
   background: $text-color2;
-  font-size: 2.1875vw;
-  line-height: 3.125vw;
+  font-size: min(2.1875vw,28px);
+  line-height: 1.428;
+  // line-height: 3.125vw;
+  // top: 0;
   top: 82.7%;
   left: -10%;
+
+  @include mq(md) {
+    font-size: min(7.466vw,28px);
+  }
 
   @include mq(sm) {
     left: -4.7%;
     top: 82.55%;
-    font-size: 28px;
     line-height: 40px;
   }
 }
@@ -1302,11 +1311,16 @@ img {
   display: inline-block;
   color: $primary-color;
   background: $text-color2;
-  font-size: 2.1875vw;
-  line-height: 3.125vw;
+  font-size: min(2.1875vw,28px);
+  // line-height: 3.125vw;
+  line-height: 1.428;
+
+  @include mq(md) {
+    font-size: min(7.466vw,28px);
+  }
 
   @include mq(sm) {
-    font-size: 28px;
+    // font-size: 28px;
     line-height: 40px;
   }
 }
@@ -1314,12 +1328,17 @@ img {
 .service-item-title-bottom {
   color: $primary-color;
   background: $text-color2;
-  font-size: 2.1875vw;
-  line-height: 3.125vw;
+  font-size: min(2.1875vw,28px);
+  // line-height: 3.125vw;
+  line-height: 1.428;
   margin-top: 9px;
 
+  @include mq(md) {
+    font-size: min(7.466vw,28px);
+  }
+
   @include mq(sm) {
-    font-size: 28px;
+    // font-size: 28px;
     line-height: 40px;
   }
 }
