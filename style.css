@@ -2306,6 +2306,7 @@ img {
   background: url(img/03-service/img-service-detail01@2x.jpg) top right/contain no-repeat;
   margin-left: -60px;
   margin-top: 110px;
+  z-index: -1;
 }
 @media screen and (max-width: 576px) {
   .eng-img {
@@ -2532,6 +2533,7 @@ img {
   background: url(img/03-service/img-service-detail03@2x.jpg) top right/contain no-repeat;
   margin-left: -60px;
   margin-top: 110px;
+  z-index: -1;
 }
 @media screen and (max-width: 576px) {
   .abroad-img {

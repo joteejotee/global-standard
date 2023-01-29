@@ -2367,6 +2367,7 @@ img {
   background: url(img/03-service/img-service-detail01@2x.jpg) top right / contain no-repeat;
   margin-left: -60px;
   margin-top: 110px;
+  z-index: -1;
 
   @include mq(sm) {
     width: 188px;
@@ -2581,6 +2582,7 @@ img {
   background: url(img/03-service/img-service-detail03@2x.jpg) top right / contain no-repeat;
   margin-left: -60px;
   margin-top: 110px;
+  z-index: -1;
 
   @include mq(sm) {
     width: 188px;

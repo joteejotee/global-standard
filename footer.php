@@ -5,7 +5,7 @@
       <p class="other-text">資料ダウンロード</p>
     </div>
     <div class="view-more-square">
-      <a class="view-more-square-link" href="<?php echo get_template_directory_uri(); ?>/download.php">View more</a>
+      <a class="view-more-square-link" href="<?php echo get_page_link(92); ?>">View more</a>
     </div>
   </div>
   <div class="contact">
@@ -14,7 +14,7 @@
       <p class="other-text">お問い合わせ</p>
     </div>
     <div class="view-more-square">
-      <a class="view-more-square-link" href="<?php echo get_template_directory_uri(); ?>/contact.php">View more</a>
+      <a class="view-more-square-link" href="<?php echo get_page_link(94); ?>">View more</a>
     </div>
   </div>
   <!-- /.other -->
