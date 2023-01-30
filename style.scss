@@ -498,15 +498,8 @@ img {
 }
 
 /* ===============================================
-  @extend
-=============================================== */
-.service-item-img {}
-
-/* ===============================================
   header
 =============================================== */
-.drawer {}
-
 .button {
   position: static;
 }
@@ -590,8 +583,6 @@ img {
   position: static;
 }
 
-.sr-only {}
-
 .drawer-hamburger-icon {
   &::before {
     top: -7px;
@@ -600,8 +591,6 @@ img {
     top: 7px;
   }
 }
-
-.drawer-nav {}
 
 .header-nav {
   margin-left: auto;
@@ -616,8 +605,6 @@ img {
     }
   }
 }
-
-.drawer-menu {}
 
 .header-nav-list {
   display: flex;
@@ -960,8 +947,6 @@ img {
   display: flex;
 }
 
-.util-title-wrap {}
-
 .about-message-flex {
   display: flex;
 
@@ -1165,10 +1150,6 @@ img {
     // margin-left: auto;
     // margin-right: 0;
   }
-}
-
-.service-item-1 {
-
 }
 
 .service-item-2 {
@@ -1388,10 +1369,6 @@ img {
   }
 }
 
-.case-item {}
-
-.case-item-1 {}
-
 .case-item-2 {
   @include mq(sm) {
     margin-top: 46px;
@@ -1421,8 +1398,6 @@ img {
     margin-top: 46px;
   }
 }
-
-.case-item-img {}
 
 .case-item-title {
   line-height: 1.5;
@@ -1538,8 +1513,6 @@ img {
   }
 }
 
-.news-item-link {}
-
 .news-item-flex {
   display: flex;
   height: 34px;
@@ -1608,8 +1581,6 @@ img {
     margin-top: 198px;
   }
 }
-
-.other {}
 
 .download {
   background: url(img/01-top/img-download@2x.jpg) center center / cover no-repeat;
@@ -1690,12 +1661,6 @@ img {
     margin-top: 20px;
   }
 }
-
-.footer-info-address {}
-
-.footer-info-tel {}
-
-.footer-info-fax {}
 
 .to-top {
   position: fixed;
@@ -2198,13 +2163,9 @@ img {
   display: flex;
 }
 
-.member-sns-li {}
-
 .member-sns-li-link {
   margin-right: 24px;
 }
-
-.fa-brands {}
 
 .size-32 {
   font-size: 32px;
@@ -2664,13 +2625,6 @@ img {
   }
 }
 
-// 以下の三つは最後まで要らなかったら最後に消す。
-.news-top-titles {}
-
-.news-top-title {}
-
-.news-top-sub-title {}
-
 /*    page-news  page-news-left
 --------------------------------------------------------------------------------- */
 .page-news-left {
@@ -2820,8 +2774,6 @@ img {
   //   margin-top: 182px;
   // }
 }
-
-.page-news-right-news {}
 
 .page-news-right-news-ttl {
   font-family: $font-family1;
@@ -3137,9 +3089,6 @@ img {
   }
 }
 
-.page-case-eng {
-}
-
 .page-case-eng-ttl {
   font-weight: bold;
   font-size: 28px;
@@ -3348,8 +3297,6 @@ img {
 
 /*    page-contact  main
 --------------------------------------------------------------------------------- */
-.page-contact {}
-
 .page-contact-inner {
   margin: 0 auto;
   max-width: 688px;
@@ -3461,10 +3408,6 @@ img {
   }
 }
 
-.contact-form__input-input {}
-
-.contact-form__input-select {}
-
 .contact-form__input-text {
   width: 100%;
   height: 240px;
@@ -3532,7 +3475,6 @@ img {
       display: block;
     }
   }
-  label {}
 }
 
 .js-open-button {

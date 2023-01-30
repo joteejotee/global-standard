@@ -446,9 +446,6 @@ img {
 }
 
 /* ===============================================
-  @extend
-=============================================== */
-/* ===============================================
   header
 =============================================== */
 .button {
@@ -3439,6 +3436,7 @@ img {
 .contact-form__check [type=checkbox]:checked + span::after {
   display: block;
 }
+
 .js-open-button {
   display: inline-block;
   font-size: 16px;
