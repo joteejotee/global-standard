@@ -729,7 +729,6 @@ img {
   font-size: 4.6875vw;
   font-family: "Fira Sans", sans-serif;
   line-height: 1.2;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -763,7 +762,6 @@ img {
   font-weight: bold;
   line-height: 1.45;
   margin-top: 16px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -1688,7 +1686,6 @@ img {
   font-family: "Fira Sans", sans-serif;
   color: #023E78;
   background-color: #FFFFFF;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-style: italic;
@@ -1709,7 +1706,6 @@ img {
   font-family: "Noto Sans JP", sans-serif;
   color: #023E78;
   background-color: #FFFFFF;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-weight: bold;
@@ -2173,13 +2169,13 @@ img {
 }
 @media screen and (max-width: 576px) {
   .page-service-top,
-.page-news-top,
-.page-case-top {
+  .page-news-top,
+  .page-case-top {
     background: url(img/03-service_sp/mv-service_sp.jpg) center center/cover no-repeat;
   }
   .page-service-top::before,
-.page-news-top::before,
-.page-case-top::before {
+  .page-news-top::before,
+  .page-case-top::before {
     background: url(img/02-about-sp/lower-mv-decoration_sp.png) center center/cover no-repeat;
     width: 165px;
   }
@@ -2193,8 +2189,8 @@ img {
 }
 @media screen and (max-width: 576px) {
   .service-top-titles,
-.news-top-titles,
-.case-top-titles {
+  .news-top-titles,
+  .case-top-titles {
     padding-top: 90px;
     padding-left: 5.2%;
   }
@@ -2208,7 +2204,6 @@ img {
   font-family: "Fira Sans", sans-serif;
   color: #023E78;
   background-color: #FFFFFF;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-style: italic;
@@ -2216,8 +2211,8 @@ img {
 }
 @media screen and (max-width: 576px) {
   .service-top-title,
-.news-top-title,
-.case-top-title {
+  .news-top-title,
+  .case-top-title {
     font-size: 32px;
     line-height: 38px;
     padding-left: 1px;
@@ -2233,15 +2228,14 @@ img {
   font-family: "Noto Sans JP", sans-serif;
   color: #023E78;
   background-color: #FFFFFF;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-weight: bold;
 }
 @media screen and (max-width: 576px) {
   .service-top-sub-title,
-.news-top-sub-title,
-.case-top-sub-title {
+  .news-top-sub-title,
+  .case-top-sub-title {
     font-size: 16px;
     line-height: 24px;
   }
@@ -2674,7 +2668,6 @@ img {
 }
 
 .page-news-left-article-cat {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   line-height: 34px;
@@ -3296,10 +3289,6 @@ img {
 }
 
 ::-moz-placeholder {
-  color: #ccc;
-}
-
-:-ms-input-placeholder {
   color: #ccc;
 }
 
